@@ -1,168 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css" />
+    <link rel="stylesheet" href="css\index.css" />
   </head>
   <body>
-    
-
-  <!-- Header -->
-  <header id="header">
-    <nav class="navbar navbar-expand-lg bg-">
+    <!-- Header -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg bg-">
         <div class="container-fluid">
-          <img  src="/assets/images/logo.webp" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="/assets/images/logo.webp" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Catàlogo</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+              
             </ul>
           </div>
         </div>
       </nav>
-  </header>
-  <!-- /Header -->
+    </header>
+    <!-- /Header -->
 
     <!-- Main -->
-    <div id="main">
-    <div id="carousel" class="carousel slide " data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active ">
-                <img src="/assets/images/blusa2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Tendencia Blusas 2022</h3>
-                    <p>Modelos Elegantes y Sofisticados</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="/assets/images/blusa3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3></h3>
-                    <p>Tendencias Verano - Primavera</p>
-                </div>
-            </div>
-                <div class="carousel-item">
-                    <img src="/assets/images/blusa1.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Diseños  Modernos</h3>
-                    <p>Moda y Diseño del Año 2022.</p>
-                </div>
-            </div>
+
+    <main id="main">
+      <div id="carousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/images/blusa2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Tendencia Blusas 2022</h3>
+              <p>Modelos Elegantes y Sofisticados</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/images/blusa3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p>Tendencias Verano - Primavera</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/images/blusa1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Diseños Modernos</h3>
+              <p>Moda y Diseño del Año 2022.</p>
+            </div>
+          </div>
         </div>
-    </div>
-        <!-- /Main -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <!-- /Main -->
 
     <!-- Section -->
     <div class="container">
-        <h1 class="text-center m-4">Nuestro Catalogo</h1>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="/assets/images/catalogo/img2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Blusa carmel</h4>
-                      <p class="card-text">Diseño elegante y casual</p>
-                      
-                    </div>
-                  </div>
+      <h1 class="text-center m-4">Nuestro Catalogo</h1>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center border-navbar">
+          <div class="card text-center border border-5" style="width: 18rem">
+            <a href="/table.html">
+                <img
+              src="/assets/images/catalogo/img2.jpg"
+              class="card-img-top"
+              alt="Blusa-carmel"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">Blusa carmel</h4>
+              <p class="card-text">Diseño elegante y casual</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="/assets/images/catalogo/img3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Blusa Prem</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="/assets/images/catalogo/img4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Camisa 04205</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="/assets/images/catalogo/img5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Camisa 04206</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <div class="card text-center border border-5" style="width: 18rem">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalImage1">
+            <img
+              src="/assets/images/catalogo/img3.jpg"
+              class="card-img-top"
+              alt="Blusa Prem"
+            /></a>
+            <div class="card-body">
+              <h4 class="card-title">Blusa Prem</h4>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <div class="card text-center border border-5" style="width: 18rem">
+            <img
+              src="/assets/images/catalogo/img4.jpg"
+              class="card-img-top"
+              alt="Camisa 04205"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Camisa 04205</h4>
+              <p class="card-text">
+                Camisa con diseño lazo en la cintura.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <div class="card text-center border border-5" style="width: 18rem">
+            <img
+              src="/assets/images/catalogo/img5.jpg"
+              class="card-img-top"
+              alt="Camisa04206"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Camisa 04206</h4>
+              <p class="card-text">
+                Camisa casual.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /Section -->
+
+    <!-- Modal -->
+<div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <img src="/assets/images/catalogo/img3.jpg" alt="" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Blusa Prem</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Blusa con prense delantero manga 3/4, camiseta de estilo casual, corte suelto.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         
-        
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-   <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
   </body>
 </html>
